@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .row-tailwind {
+        @apply flex flex-wrap items-center
+    }
+    .row-tailwind-input {
+        @apply flex flex-wrap items-center
+    }
+
+    .row-tailwind-meal{
+        @apply flex flex-wrap py-12 px-2 
+    }
+
+    .meal-image-width-33\.33\%-tailwind{
+        @apply md:w-1/3 px-3 mt-6 w-full
+    }
+
+    .meal-details-width-66\.66\%-tailwind{
+        @apply md:w-2/3 px-3 mt-6 w-full
+    }
+
+    .meal-image-width-33\.33\%-tailwind h2{
+        @apply mb-2 text-color-rgb-249-246-246 text-32px leading-38px font-500 
+    }
+
+    .meal-details-width-66\.66\%-tailwind h2{
+        @apply mb-2 text-32px leading-38px font-500 text-color-rgb-249-246-246 
+    }
+
+    .meal-details-width-66\.66\%-tailwind  p {
+        @apply mb-4 text-16px leading-24px font-400 text-color-rgb-249-246-246 
+    }
+    
+    .meal-details-width-66\.66\%-tailwind  h3{
+        @apply mb-2 text-28px leading-34px font-500 text-color-rgb-249-246-246 
+    }
+
+    .meal-details-width-66\.66\%-tailwind  h3 span{
+        @apply font-700
+    }
+
+
+    .recipes-ul {
+        @apply flex flex-wrap mb-4 
+    }
+
+    .recipe {
+        @apply m-2 p-1 bg-color-rgb-207-244-252 rounded-md border-[1.5px]
+        border-color-rgb-182-239-251 text-color-rgb-5-81-96
+        text-16px leading-24px font-400
+    }
+
+
+    .source {
+        @apply py-6px px-12px border-1.5px rounded-6px border-color-rgb-25-135-84 bg-color-rgb-25-135-84 
+        text-white text-16px leading-24px font-400 duration-0.15s transition-colors hover:bg-color-rgb-21-115-71 hover:border-color-rgb-20-108-67
+    }
+
+    .youtube {
+        @apply py-6px px-12px border-1.5px rounded-6px border-color-rgb-220-53-69 bg-color-rgb-220-53-69 text-16px leading-24px font-400 text-white  transition-colors duration-0.15s hover:bg-color-rgb-187-45-59 hover:border-color-rgb-176-42-55
+    }
+
+
+
+
+
+
+
+
+    .area {
+        @apply text-center rounded-6px 
+    }
+    .area i {
+        @apply text-color-rgb-249-246-246 text-64px leading-64px font-900 
+    }
+
+    .area h3{
+        @apply text-28px leading-34px font-500 text-color-rgb-249-246-246 mb-2
+    }
+
+
+
+
+
+    .ingredients{
+        @apply text-center rounded-6px 
+    }
+
+
+    .ingredients i{
+        @apply text-color-rgb-249-246-246 text-64px leading-64px font-900 
+    }
+
+
+    .ingredients h3{
+        @apply text-28px font-500 leading-34px font-500 text-color-rgb-249-246-246  mb-2
+    }
+
+    .ingredients p {
+        @apply text-16px text-color-rgb-249-246-246 leading-24px font-400 mb-4
+    }
+
+
+
+
+    .contact {
+        @apply min-h-100vh flex items-center justify-center mt-6 px-3  w-full
+    }
+
+    .inner-contact {
+        @apply w-3/4 text-center px-3 
+    }
+
+    .inputs-contact {
+        @apply flex  flex-wrap 
+    }
+
+
+
+    .col-input {
+        @apply w-1/2 px-3 mt-6
+    }
+
+    .col-input input{
+        @apply w-full block px-3 py-6px border-1.5px text-16px leading-24px font-400 rounded-6px 
+        text-color-rgb-33-37-41  bg-white border-color-rgb-206-212-218 outline-color-rgb-33-37-41 
+        focus:border-color-hexa-86b7fe
+        focus:text-color-rgb-33-37-41 focus:outline-0 focus:shadow-input-box-shadow transition-colors duration-0.15s ease-in-out 
+    }
+
+
+    .error-message {
+        @apply mt-6px mb-4 p-4 border-1.5px bg-color-rgb-248-215-218 border-color-rgb-245-194-199 rounded-6px text-[rgb(132,32,41)] text-16px leading-24px font-400 
+    }
+
+
+
+    .submitBtn {
+        @apply py-6px px-2 border-1.5px mt-4 border-color-rgb-220-53-69 rounded-6px bg-transparent hover:cursor-pointer text-color-rgb-220-53-69 text-16px leading-24px font-400 hover:text-white hover:bg-color-hexa-dc3545 hover:border-color-hexa-dc3545 transition-colors ease-in-out duration-0.15s disabled:text-color-hexa-dc3545 disabled:cursor-default disabled:bg-[#00000000] disabled:border-color-hexa-dc3545 disabled:opacity-[0.65]
+    }
+
+
+
+
+
+
+
+    .input-search {
+        @apply py-6 
+    }
+
+    .input-width-50\%-tailwind{
+        @apply md:w-1/2  w-full px-3 
+    }
+
+    .search{
+        @apply py-[6px] px-3 w-full bg-transparent border border-color-rgb-206-212-218 rounded-md text-white focus:outline-none focus:border-color-hexa-86b7fe
+        
+        focus:shadow-input-box-shadow
+        transition-colors duration-300
+    }
+
+    .yummy-meal-width-25\%-tailwind{ 
+        @apply md:w-1/4 mt-6 w-full;
+    }
+
+    .meal-image {
+        @apply relative overflow-hidden cursor-pointer  ;
+    }
+
+    .meal-overlay{
+        @apply bg-color-hexa-alpha-f9f6f6ca absolute w-full h-full top-full p-2  flex items-center group-hover/mealImage:top-0  duration-500;
+    }
+
+    .meal-title{
+        @apply text-black text-28px leading-34px font-500 
+    }
+
+
+    .category-overlay {
+        @apply  bg-color-hexa-alpha-f9f6f6ca absolute w-full h-full top-full p-2  text-center p-2  group-hover/mealImage:top-0  duration-500;
+    }
+
+
+    .nav{
+        @apply flex z-20 fixed top-0 bottom-0
+         -left-247px
+    }
+
+    .nav-right {
+        @apply p-6 bg-color-hexa-0D0D0D flex flex-col
+        justify-between 
+    }
+
+    .nav-icons{
+        @apply text-color-rgb-249-246-246 text-16px leading-16px font-400
+    }
+
+    .nav-copy-right {
+        @apply text-color-rgb-249-246-246 text-16px leading-24px font-400 mt-2
+    }
+
+    .nav-icons i {
+        @apply mr-2
+    }
+
+    .links-ul {
+
+        @apply mb-4 
+    }
+
+    .link{
+
+        @apply py-2 text-color-rgb-249-246-246 text-16px leading-24px font-400 cursor-pointer
+
+    }
+
+    .nav-left{
+        @apply bg-white   py-6 px-2 flex flex-col justify-between items-center
+    }
+
+    .bars-close{
+        @apply text-32px leading-32px font-900 cursor-pointer
+    }
+
+    .loading-spinner{
+        @apply fixed top-0 left-0 w-full h-full z-10 bg-color-hexa-0D0D0D flex items-center
+    }
+   
+}
+
